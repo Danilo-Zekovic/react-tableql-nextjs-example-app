@@ -17,7 +17,10 @@ function App({ Component, pageProps }) {
           <Link href="/"><a>Home</a></Link>
         </div>
         <div style={{padding: "10px", margin: "5px", border: "1px solid black"}}>
-          <Link href="/films"><a>Films</a></Link>
+          <Link href="/films"><a>Films (ApolloTableQL Example)</a></Link>
+        </div>
+        <div style={{padding: "10px", margin: "5px", border: "1px solid black"}}>
+          <Link href="/table-ql"><a>TableQL Example</a></Link>
         </div>
         <div style={{padding: "10px", margin: "5px", border: "1px solid black"}}>
           <Link href="/foo"><a>Foo</a></Link>

@@ -1,13 +1,13 @@
 import Link from 'next/link'
-import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from 'react-apollo';
+import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client'
 
 import '../styles/globals.css'
 
 function App({ Component, pageProps }) {
   const client = new ApolloClient({
     uri: 'https://swapi.graph.cool',
-    ssrMode: true
+    ssrMode: true,
+    cache: new InMemoryCache()
   })
 
   return (
